@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 包名+sql映射文件名保证命名空间的唯一 -->
+<mapper namespace="dao.scMapper">
+    <select id="getSomeSc" parameterType="int" resultType="pojo.sc">
+       select * from sc where user_id=#{user_id}
+    </select>
+    <insert id="addSc" parameterType="pojo.sc">
+       insert into sc(user_id,goods_id)
+       values(#{user_id},#{goods_id})
+    </insert>
+    <select id="getOneSc" parameterType="pojo.sc" resultType="pojo.sc">
+       select * from sc where user_id=#{user_id} and goods_id=#{goods_id}
+    </select>
+    <delete id="deleteSc" parameterType="pojo.sc">
+        delete from sc where user_id=#{user_id} and goods_id=#{goods_id}
+    </delete>
+</mapper>

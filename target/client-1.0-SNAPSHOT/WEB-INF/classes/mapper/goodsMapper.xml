@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 包名+sql映射文件名保证命名空间的唯一 -->
+<mapper namespace="dao.goodsMapper">
+    <select id="getOneGoods" parameterType="int" resultType="pojo.goods">
+       select * from goods where goods_id=#{goods_id}
+    </select>
+    <select id="getTypeGoods" parameterType="String" resultType="pojo.goods">
+      select * from goods where goods_type=#{goods_type} and amount=1
+    </select>
+    <select id="getSomeGoods" parameterType="int" resultType="pojo.goods">
+      select * from goods where user_id=#{user_id}
+    </select>
+    <select id="getBrandGoods" parameterType="String" resultType="pojo.goods">
+      select * from goods where brand=#{brand} and amount=1
+    </select>
+    <select id="getHotGoods" parameterType="String" resultType="pojo.goods">
+      select * from goods where xh=#{xh} and amount=1
+    </select>
+    <select id="getModelGoods" parameterType="String" resultType="pojo.goods">
+      select * from goods where model=#{model} and amount=1
+    </select>
+    <select id="getAllGoods" resultType="pojo.goods">
+        select * from goods
+    </select>
+    <insert id="goodsInsert" parameterType="pojo.goods">
+       insert into goods(goods_name,prices,goods_type,imgPath,goods_local,goods_change,user_name,user_tel,user_id,model,color,brand,xh,amount)
+       values(#{goods_name},#{prices},#{goods_type},#{imgPath},#{goods_local},#{goods_change},#{user_name},#{user_tel},#{user_id},#{model},#{color},#{brand},#{xh},#{amount})
+    </insert>
+    <update id="goodsUpdate" parameterType="pojo.goods">
+        update goods set goods_name=#{goods_name},prices=#{prices},goods_type=#{goods_type},goods_local=#{goods_local},goods_change=#{goods_change},user_tel=#{user_tel},user_name=#{user_name},model=#{model},color=#{color},brand=#{brand},xh=#{xh},amount=#{amount} where goods_id=#{goods_id}
+    </update>
+    <update id="goodsSomeUpdate" parameterType="pojo.goods">
+        update goods set goods_name=#{goods_name},prices=#{prices},goods_change=#{goods_change},color=#{color},brand=#{brand},xh=#{xh} where goods_id=#{goods_id}
+    </update>
+    <delete id="goodsDelete" parameterType="int">
+        delete from goods where goods_id=#{goods_id}
+    </delete>
+</mapper>

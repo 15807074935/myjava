@@ -1,0 +1,99 @@
+.fb {
+    font: 12px/150% tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #666;
+    background: #fff;
+}
+
+.fb .wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.fb .wrapper .top {
+    width: 1210px;
+    height: 110px;
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+}
+
+.fb .wrapper .top .s1 {
+    line-height: 110px;
+    font-size: 24px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.fb .wrapper .top .s2 {
+    font-size: 16px;
+    float: right;
+    margin-top: 55px;
+    color: #999;
+}
+
+.fb .wrapper .top .s2 a {
+    color: #f30213;
+}
+
+.fb .wrapper .mid {
+    width: 1210px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.fb .wrapper .mid .left {
+    width: 300px;
+    height: 80px;
+    float: left;
+}
+
+.fb .wrapper .mid .left span {
+    display: block;
+    width: 300px;
+    height: 80px;
+    font: 400 16px/190% Hiragino Sans GB, 微软雅黑, Microsoft YaHei, SimHei, Tahoma, 宋体, SimSun, sansserif;
+    color: #333;
+    border-bottom: 3px solid #eee;
+    line-height: 130px;
+}
+
+.fb .wrapper .mid .center {
+    width: 300px;
+    height: 80px;
+    float: left;
+    margin-left: 150px;
+}
+
+.fb .wrapper .mid .center span {
+    display: block;
+    width: 300px;
+    height: 80px;
+    font: 400 16px/190% Hiragino Sans GB, 微软雅黑, Microsoft YaHei, SimHei, Tahoma, 宋体, SimSun, sansserif;
+    color: #333;
+    border-bottom: 3px solid #eee;
+    line-height: 130px;
+}
+
+.fb .wrapper .mid .right {
+    width: 300px;
+    height: 80px;
+    float: left;
+    margin-left: 150px;
+}
+
+.fb .wrapper .mid .right span {
+    display: block;
+    width: 300px;
+    height: 80px;
+    font: 400 16px/190% Hiragino Sans GB, 微软雅黑, Microsoft YaHei, SimHei, Tahoma, 宋体, SimSun, sansserif;
+    color: #FF552E;
+    border-bottom: 3px solid #FF552E;
+    line-height: 130px;
+}
+
+.fb .wrapper .btm {
+    width: 1210px;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 50px;
+}

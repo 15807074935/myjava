@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+html,body{
+    width:100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+.wrapper{
+    color: #3c3c3c;
+    width:100%;
+    height: 100%;
+}
+.wrapper .top{
+    width:1210px;
+    height: 110px;
+    margin: 0 auto;
+}
+.wrapper .top span{
+    line-height: 110px;
+    font-size: 24px;
+    color: #333;
+    margin-left: 10px;
+}
+.wrapper .btm {
+    width: 800px;
+    height: 360px;
+    margin: 0 auto;
+    font: 12px/150% tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
+    color: #666;
+    border: 1px solid #eee;
+}
+
+.wrapper .btm form .tip {
+    border: 1px solid #eee;
+    margin-top: 0px;
+}
+
+.wrapper .btm form div {
+    width: 800px;
+    height: 40px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.wrapper .btm form .userinput {
+    width: 300px;
+    height: 38px;
+    border: 1px solid #eee;
+}
+
+.wrapper .btm form .choose {
+    margin-top: 12.5px;
+    height: 15px;
+    width: 15px;
+}
+
+.wrapper .btm form span {
+    display: block;
+    width: 80px;
+    height: 38px;
+    line-height: 38px;
+    font-weight: 700;
+    margin-left: 20px;
+    float: left;
+}

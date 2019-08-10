@@ -1,0 +1,314 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* 主界面 */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    color: #3c3c3c;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper .top-nav-wrap {
+    width: 100%;
+    height: 30px;
+    background: #e3e4e5;
+}
+
+.wrapper .top-nav-wrap .center-nav {
+    height: 30px;
+    width: 990px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapper .top-nav-wrap .center-nav .top-li {
+    float: left;
+    margin: 0 20px 0 0;
+    line-height: 30px;
+    color: #999;
+    font-size: 13px;
+}
+
+.wrapper .top-nav-wrap .center-nav .right-li>a {
+    color: #999;
+}
+
+.wrapper .top-nav-wrap .center-nav .right-li>a:hover {
+    color: #f30213;
+}
+
+.wrapper .top-nav-wrap .center-nav .li-link {
+    line-height: 30px;
+    color: #999;
+    font-size: 13px;
+}
+
+.wrapper .top-nav-wrap .center-nav .li-link:hover {
+    color: #f30213;
+}
+
+.wrapper .top-nav-wrap .center-nav .init-local {
+    display: block;
+    padding-left: 25px;
+    padding-right: 15px;
+    color: #999;
+}
+
+.wrapper .top-nav-wrap .center-nav .init-local::after {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 95px;
+    background-image: url('../images/top-local.png');
+}
+
+.wrapper .top-nav-wrap .center-nav .init-local:hover {
+    background-color: #fff;
+}
+
+.wrapper .top-nav-wrap .center-nav .top-home {
+    background-image: url('../images/top-home.png');
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    margin-right: 3px;
+}
+
+.wrapper .top-nav-wrap .center-nav .right-li {
+    float: right;
+    margin: 0 0 0 20px;
+    line-height: 30px;
+    color: #999;
+    font-size: 13px;
+}
+
+.wrapper .top-nav-wrap .center-nav .right-li #usermes {
+    border:1px solid #ddd;
+    border-top-width: 0;
+    display: none;
+}
+
+.wrapper .top-nav-wrap .center-nav .right-li #usermes .innerul {
+    background-color: #fff;
+    display: block;
+}
+
+.wrapper .top-nav-wrap .center-nav .right-li #usermes .innerul .innerli a {
+    color:#999;
+    font-size: 13px;
+    text-align: center;
+    display: block;
+    padding:0 8px;
+}
+
+.wrapper .top-nav-wrap .center-nav .right-li #usermes .innerul .innerli a:hover {
+    background-color: #999;
+    color: #fff;
+}
+
+.wrapper .top-nav-wrap .center-nav .top-li .local-more {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: absolute;
+    top: 29px;
+    border-top-width: 0;
+    display: none;
+    z-index: 5;
+}
+
+.wrapper .top-nav-wrap .center-nav .top-li .local-more .more-li {
+    float: left;
+    margin-right: 10px;
+}
+
+.wrapper .top-nav-wrap .center-nav .top-li .local-more .more-li .more-li-li>a {
+    padding: 3px 4px;
+}
+
+.wrapper .top-nav-wrap .center-nav .top-li .local-more .more-li .more-li-li>a:hover {
+    background-color: #f30213;
+}
+
+.wrapper .top-nav-wrap .center-nav .top-li .local-more .more-ul::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.wrapper .top {
+    width: 990px;
+    height: 110px;
+    margin: 0 auto;
+}
+
+.wrapper .top .s1 {
+    line-height: 110px;
+    font-size: 24px;
+    color: #333;
+    margin-left: 10px;
+}
+
+.wrapper .mid {
+    width: 990px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.wrapper .mid a {
+    display: block;
+    float: left;
+    line-height: 45px;
+    text-align: center;
+    width: 60px;
+    height: 45px;
+    color: #666;
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+.wrapper .btm {
+    width: 990px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.wrapper .btm .text {
+    width: 990px;
+    height: 32px;
+    margin: 0 auto;
+    background: #f3f3f3;
+    border: 1px solid #e9e9e9;
+    padding: 5px 0;
+    border-bottom: 2px solid #aaa;
+}
+
+.wrapper .btm .text span {
+    color: #666;
+    font: 13px tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
+    line-height: 32px;
+}
+
+.wrapper .btm .text2 {
+    width: 990px;
+    height: 32px;
+    margin: 0 auto;
+    padding: 5px 0;
+    border: 1px solid #f1f1f1;
+    border-bottom: none;
+}
+
+.wrapper .btm .text2 span {
+    color: #666;
+    font: 13px tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
+    line-height: 32px;
+}
+
+.wrapper .btm .sp {
+    width: 990px;
+    height: 119px;
+    border: 1px solid #f1f1f1;
+}
+
+.wrapper .btm .sp .main {
+    width: 940px;
+    height: 82px;
+    margin-top: 18px;
+    float: left;
+}
+
+.wrapper .btm .sp .main .image {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #f1f1f1;
+    background-color: #fff;
+    float: left;
+    margin-left: 15px;
+}
+
+.wrapper .btm .sp .main .title {
+    width: 199px;
+    height: 60px;
+    float: left;
+    margin-left: 15px;
+    overflow: hidden;
+    color: #333;
+    font: 13px tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
+    margin-top: 20px;
+}
+
+.wrapper .btm .sp .main span {
+    color: #333;
+    font: 13px tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
+    line-height: 80px;
+}
+
+.wrapper .btm .sp .main .prices {
+    width: 50px;
+    height: 80px;
+    float: left;
+    margin-left: 170px;
+    color: #333;
+    font: 13px tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
+    overflow: hidden;
+}
+
+.wrapper .btm .sp .main .count {
+    width: 60px;
+    height: 80px;
+    float: left;
+    margin-left: 60px;
+    color: #333;
+    font: 13px tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
+    overflow: hidden;
+}
+
+.wrapper .btm .sp .main .xj {
+    width: 125px;
+    height: 80px;
+    float: left;
+    margin-left: 61px;
+    color: #333;
+    font-weight: 700;
+    font: 13px tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
+    overflow: hidden;
+    font-weight: bolder;
+}
+
+.wrapper .btm .sp .main .cz {
+    width: 52px;
+    height: 80px;
+    float: left;
+    margin-left: 45px;
+    color: #333;
+    font: 13px tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
+    overflow: hidden;
+}
+.wrapper .btm .sp .main .cz a{
+    color: #333;
+    font: 13px tahoma, arial, Microsoft YaHei, Hiragino Sans GB, "\u5b8b\u4f53", sans-serif;
+    line-height: 80px;
+    display: block;
+    height: 80px;
+    width:54px;
+    text-align: center;
+}
+.wrapper .btm .sp .main .cz > a:hover{
+    color:#f30213;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 包名+sql映射文件名保证命名空间的唯一 -->
+<mapper namespace="dao.tradeMapper">
+    <insert id="TradeInsert" parameterType="trade">
+       insert into trade(user_id,goods_id,progress,complete,tradedate)
+       values(#{user_id},#{goods_id},#{progress},#{complete},#{tradedate})
+    </insert>
+    <select id="getAllTrade" resultType="pojo.trade">
+        select * from trade;
+    </select>
+    <update id="ProgressUpdate" parameterType="pojo.trade">
+        update trade set progress=#{progress} where goods_id=#{goods_id}
+    </update>
+    <update id="CompleteUpdate" parameterType="pojo.trade">
+        update trade set complete=#{complete} where goods_id=#{goods_id}
+    </update>
+    <select id="getOneTrade" parameterType="int" resultType="pojo.trade">
+        select * from trade where goods_id=#{goods_id}
+    </select>
+    <select id="getSomeTrade" parameterType="int" resultType="pojo.trade">
+        select * from trade where user_id=#{user_id}
+    </select>
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 包名+sql映射文件名保证命名空间的唯一 -->
+<mapper namespace="dao.userMapper" >
+    <select id="getOneUser" parameterType="String" resultType="pojo.user">
+       select * from user where user_name=#{user_name}
+    </select>
+    <select id="getIdUser" parameterType="int" resultType="pojo.user">
+       select * from user where user_id=#{user_id}
+    </select>
+    <select id="getAllUser" resultType="pojo.user">
+      select * from user
+    </select>
+    <insert id="userInsert" parameterType="pojo.user">
+       insert into user(user_name,password,sex,address,birthday,email,tel)
+       values(#{user_name},#{password},#{sex},#{address},#{birthday},#{email},#{tel})
+    </insert>
+    <update id="userUpdate" parameterType="pojo.user">
+        update user set user_name=#{user_name},sex=#{sex},address=#{address},birthday=#{birthday},email=#{email},tel=#{tel} where user_id=#{user_id}
+    </update>
+    <delete id="userDel" parameterType="integer">
+        delete from user where user_id=#{user_id}
+    </delete>
+</mapper>
